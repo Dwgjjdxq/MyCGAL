@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\CGAL_Project\Polyhedron\CMakeFiles\78fc84aac75bed016f2af7e0813cf4f5\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A212FE62-ED1C-4AE7-AF7A-5F979DF50F24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

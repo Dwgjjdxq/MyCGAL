@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\CGAL-4.7\demo\Polyhedron\Polyhedron_demo_point_set_upsampling_plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\CGAL_Project\Polyhedron\point_set_upsampling_plugin_automoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\CGAL_Project\Polyhedron\ui_Polyhedron_demo_point_set_upsampling_plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CGAL-4.7\demo\Polyhedron\CMakeLists.txt" />
+    <CustomBuild Include="E:\CGAL_Project\Polyhedron\CMakeFiles\0a8643aec19a5e951a364f1fd08f9221\Polyhedron_demo_point_set_upsampling_plugin.moc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\CGAL-4.7\demo\Polyhedron\Polyhedron_demo_point_set_upsampling_plugin.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\CGAL_Project\Polyhedron\Polyhedron_demo_point_set_upsampling_plugin.moc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BBE9E928-71EF-401A-80C9-B717C73FA360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{69A2FB4D-1454-4325-9595-4D4B43CDF3AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A212FE62-ED1C-4AE7-AF7A-5F979DF50F24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

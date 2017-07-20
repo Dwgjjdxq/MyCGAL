@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{8DCB686C-7EE0-4CC2-9481-FEF69359D92E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>pca_plugin</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CGAL_Project\Polyhedron\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pca_plugin.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pca_plugin</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CGAL_Project\Polyhedron\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pca_plugin.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pca_plugin</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CGAL_Project\Polyhedron\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pca_plugin.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pca_plugin</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CGAL_Project\Polyhedron\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pca_plugin.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pca_plugin</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SCRIPT_LIB;QT_OPENGL_LIB;QT_XML_LIB;CGAL_USE_MPFR;CGAL_USE_GMP;BOOST_ALL_DYN_LINK;QT_NO_KEYWORDS;CGAL_EIGEN3_ENABLED;USE_FORWARD_DECL;CMAKE_INTDIR="Debug";pca_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SCRIPT_LIB;QT_OPENGL_LIB;QT_XML_LIB;CGAL_USE_MPFR;CGAL_USE_GMP;BOOST_ALL_DYN_LINK;QT_NO_KEYWORDS;CGAL_EIGEN3_ENABLED;USE_FORWARD_DECL;CMAKE_INTDIR=\"Debug\";pca_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target pca_plugin</Message>
+      <Command>setlocal
+cd E:\CGAL_Project\Polyhedron
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen E:/CGAL_Project/Polyhedron/CMakeFiles/pca_plugin_automoc.dir/ Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libmpfr-4.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libgmp-10.lib;glu32.lib;opengl32.lib;glu32.lib;opengl32.lib;Debug\scene_polyhedron_item.lib;Debug\scene_basic_objects.lib;C:\local\boost_1_59_0\lib64-msvc-12.0\boost_thread-vc120-mt-gd-1_59.lib;C:\local\boost_1_59_0\lib64-msvc-12.0\boost_system-vc120-mt-gd-1_59.lib;Debug\demo_framework.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Scriptd.lib;Debug\gl_splat.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libmpfr-4.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libgmp-10.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5OpenGLd.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Guid.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Xmld.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Cored.lib;F:\libQGLViewer-2.6.3\QGLViewer\QGLViewerd2.lib;glu32.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:/CGAL-4.7/build/lib;E:/CGAL-4.7/build/lib/$(Configuration);C:/local/boost_1_59_0/lib64-msvc-12.0;C:/local/boost_1_59_0/lib64-msvc-12.0/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CGAL_Project/Polyhedron/Debug/pca_plugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/CGAL_Project/Polyhedron/Debug/pca_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SCRIPT_LIB;QT_OPENGL_LIB;QT_XML_LIB;CGAL_USE_MPFR;CGAL_USE_GMP;BOOST_ALL_DYN_LINK;QT_NO_KEYWORDS;CGAL_EIGEN3_ENABLED;USE_FORWARD_DECL;QT_NO_DEBUG;CMAKE_INTDIR="Release";pca_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SCRIPT_LIB;QT_OPENGL_LIB;QT_XML_LIB;CGAL_USE_MPFR;CGAL_USE_GMP;BOOST_ALL_DYN_LINK;QT_NO_KEYWORDS;CGAL_EIGEN3_ENABLED;USE_FORWARD_DECL;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";pca_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target pca_plugin</Message>
+      <Command>setlocal
+cd E:\CGAL_Project\Polyhedron
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen E:/CGAL_Project/Polyhedron/CMakeFiles/pca_plugin_automoc.dir/ Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libmpfr-4.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libgmp-10.lib;glu32.lib;opengl32.lib;glu32.lib;opengl32.lib;Release\scene_polyhedron_item.lib;Release\scene_basic_objects.lib;C:\local\boost_1_59_0\lib64-msvc-12.0\boost_thread-vc120-mt-1_59.lib;C:\local\boost_1_59_0\lib64-msvc-12.0\boost_system-vc120-mt-1_59.lib;Release\demo_framework.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Script.lib;Release\gl_splat.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libmpfr-4.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libgmp-10.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5OpenGL.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Gui.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Xml.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Core.lib;F:\libQGLViewer-2.6.3\QGLViewer\QGLViewer2.lib;glu32.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:/CGAL-4.7/build/lib;E:/CGAL-4.7/build/lib/$(Configuration);C:/local/boost_1_59_0/lib64-msvc-12.0;C:/local/boost_1_59_0/lib64-msvc-12.0/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CGAL_Project/Polyhedron/Release/pca_plugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/CGAL_Project/Polyhedron/Release/pca_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SCRIPT_LIB;QT_OPENGL_LIB;QT_XML_LIB;CGAL_USE_MPFR;CGAL_USE_GMP;BOOST_ALL_DYN_LINK;QT_NO_KEYWORDS;CGAL_EIGEN3_ENABLED;USE_FORWARD_DECL;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel";pca_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SCRIPT_LIB;QT_OPENGL_LIB;QT_XML_LIB;CGAL_USE_MPFR;CGAL_USE_GMP;BOOST_ALL_DYN_LINK;QT_NO_KEYWORDS;CGAL_EIGEN3_ENABLED;USE_FORWARD_DECL;QT_NO_DEBUG;CMAKE_INTDIR=\"MinSizeRel\";pca_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target pca_plugin</Message>
+      <Command>setlocal
+cd E:\CGAL_Project\Polyhedron
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen E:/CGAL_Project/Polyhedron/CMakeFiles/pca_plugin_automoc.dir/ MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libmpfr-4.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libgmp-10.lib;glu32.lib;opengl32.lib;glu32.lib;opengl32.lib;MinSizeRel\scene_polyhedron_item.lib;MinSizeRel\scene_basic_objects.lib;C:\local\boost_1_59_0\lib64-msvc-12.0\boost_thread-vc120-mt-1_59.lib;C:\local\boost_1_59_0\lib64-msvc-12.0\boost_system-vc120-mt-1_59.lib;MinSizeRel\demo_framework.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Script.lib;MinSizeRel\gl_splat.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libmpfr-4.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libgmp-10.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5OpenGL.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Gui.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Xml.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Core.lib;F:\libQGLViewer-2.6.3\QGLViewer\QGLViewer2.lib;glu32.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:/CGAL-4.7/build/lib;E:/CGAL-4.7/build/lib/$(Configuration);C:/local/boost_1_59_0/lib64-msvc-12.0;C:/local/boost_1_59_0/lib64-msvc-12.0/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CGAL_Project/Polyhedron/MinSizeRel/pca_plugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/CGAL_Project/Polyhedron/MinSizeRel/pca_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SCRIPT_LIB;QT_OPENGL_LIB;QT_XML_LIB;CGAL_USE_MPFR;CGAL_USE_GMP;BOOST_ALL_DYN_LINK;QT_NO_KEYWORDS;CGAL_EIGEN3_ENABLED;USE_FORWARD_DECL;QT_NO_DEBUG;CMAKE_INTDIR="RelWithDebInfo";pca_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SCRIPT_LIB;QT_OPENGL_LIB;QT_XML_LIB;CGAL_USE_MPFR;CGAL_USE_GMP;BOOST_ALL_DYN_LINK;QT_NO_KEYWORDS;CGAL_EIGEN3_ENABLED;USE_FORWARD_DECL;QT_NO_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";pca_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CGAL_Project\Polyhedron;E:\CGAL-4.7\demo\Polyhedron;E:\CGAL-4.7\demo\Polyhedron\.\CGAL_demo;E:\CGAL-4.7\demo\Polyhedron\..\..\include;E:\CGAL-4.7\demo\Polyhedron\.\include;E:\CGAL-4.7\demo\Polyhedron\.;E:\CGAL-4.7\auxiliary\gmp\include;E:\CGAL-4.7\build\include;E:\CGAL-4.7\include;C:\local\boost_1_59_0;\QtScriptTools;C:\eigen-eigen-67e894c6cd8f;F:\libQGLViewer-2.6.3;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtScript;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtOpenGL;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target pca_plugin</Message>
+      <Command>setlocal
+cd E:\CGAL_Project\Polyhedron
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen E:/CGAL_Project/Polyhedron/CMakeFiles/pca_plugin_automoc.dir/ RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libmpfr-4.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libgmp-10.lib;glu32.lib;opengl32.lib;glu32.lib;opengl32.lib;RelWithDebInfo\scene_polyhedron_item.lib;RelWithDebInfo\scene_basic_objects.lib;C:\local\boost_1_59_0\lib64-msvc-12.0\boost_thread-vc120-mt-1_59.lib;C:\local\boost_1_59_0\lib64-msvc-12.0\boost_system-vc120-mt-1_59.lib;RelWithDebInfo\demo_framework.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Script.lib;RelWithDebInfo\gl_splat.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libmpfr-4.lib;E:\CGAL-4.7\auxiliary\gmp\lib\libgmp-10.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5OpenGL.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Gui.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Xml.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Core.lib;F:\libQGLViewer-2.6.3\QGLViewer\QGLViewer2.lib;glu32.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:/CGAL-4.7/build/lib;E:/CGAL-4.7/build/lib/$(Configuration);C:/local/boost_1_59_0/lib64-msvc-12.0;C:/local/boost_1_59_0/lib64-msvc-12.0/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CGAL_Project/Polyhedron/RelWithDebInfo/pca_plugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/CGAL_Project/Polyhedron/RelWithDebInfo/pca_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CGAL-4.7\demo\Polyhedron\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/CGAL-4.7/demo/Polyhedron/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/CGAL-4.7/demo/Polyhedron -BE:/CGAL_Project/Polyhedron --check-stamp-file E:\CGAL_Project\Polyhedron\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/CGAL-4.7/demo/Polyhedron/CMakeLists.txt;E:\CGAL-4.7\demo\Polyhedron\CMakeLists.txt;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeCCompiler.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;E:\CGAL-4.7\build\CGALConfig.cmake;E:\CGAL-4.7\build\CGALExports.cmake;E:\CGAL-4.7\cmake\modules\UseCGAL.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Macros.cmake;E:\CGAL-4.7\cmake\modules\CGAL_VersionUtils.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Common.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Macros.cmake;E:\CGAL-4.7\cmake\modules\CGAL_SetupFlags.cmake;E:\CGAL-4.7\cmake\modules\CGAL_GeneratorSpecificSettings.cmake;E:\CGAL-4.7\cmake\modules\CGAL_TweakFindBoost.cmake;E:\CGAL-4.7\cmake\modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Script\Qt5ScriptConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Script\Qt5ScriptConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5ScriptTools\Qt5ScriptToolsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5ScriptTools\Qt5ScriptToolsConfig.cmake;E:\CGAL-4.7\cmake\modules\FindOpenGL.cmake;E:\CGAL-4.7\cmake\modules\FindQGLViewer.cmake;E:\CGAL-4.7\cmake\modules\FindEigen3.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\CGAL-4.7\cmake\modules\UseEigen3.cmake;E:\CGAL-4.7\cmake\modules\FindTBB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindBoost.cmake;E:\CGAL-4.7\demo\Polyhedron\polyhedron_demo_macros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\AddFileDependencies.cmake;E:\CGAL-4.7\demo\Polyhedron\Polyhedron_3.qrc;E:\CGAL-4.7\demo\Polyhedron\GlSplat\glsplat.qrc;E:\CGAL-4.7\demo\Polyhedron\CGAL_polyhedron_demoConfig.cmake.in;E:\CGAL-4.7\demo\Polyhedron\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CGAL_Project\Polyhedron\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/CGAL-4.7/demo/Polyhedron/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/CGAL-4.7/demo/Polyhedron -BE:/CGAL_Project/Polyhedron --check-stamp-file E:\CGAL_Project\Polyhedron\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/CGAL-4.7/demo/Polyhedron/CMakeLists.txt;E:\CGAL-4.7\demo\Polyhedron\CMakeLists.txt;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeCCompiler.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;E:\CGAL-4.7\build\CGALConfig.cmake;E:\CGAL-4.7\build\CGALExports.cmake;E:\CGAL-4.7\cmake\modules\UseCGAL.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Macros.cmake;E:\CGAL-4.7\cmake\modules\CGAL_VersionUtils.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Common.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Macros.cmake;E:\CGAL-4.7\cmake\modules\CGAL_SetupFlags.cmake;E:\CGAL-4.7\cmake\modules\CGAL_GeneratorSpecificSettings.cmake;E:\CGAL-4.7\cmake\modules\CGAL_TweakFindBoost.cmake;E:\CGAL-4.7\cmake\modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Script\Qt5ScriptConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Script\Qt5ScriptConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5ScriptTools\Qt5ScriptToolsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5ScriptTools\Qt5ScriptToolsConfig.cmake;E:\CGAL-4.7\cmake\modules\FindOpenGL.cmake;E:\CGAL-4.7\cmake\modules\FindQGLViewer.cmake;E:\CGAL-4.7\cmake\modules\FindEigen3.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\CGAL-4.7\cmake\modules\UseEigen3.cmake;E:\CGAL-4.7\cmake\modules\FindTBB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindBoost.cmake;E:\CGAL-4.7\demo\Polyhedron\polyhedron_demo_macros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\AddFileDependencies.cmake;E:\CGAL-4.7\demo\Polyhedron\Polyhedron_3.qrc;E:\CGAL-4.7\demo\Polyhedron\GlSplat\glsplat.qrc;E:\CGAL-4.7\demo\Polyhedron\CGAL_polyhedron_demoConfig.cmake.in;E:\CGAL-4.7\demo\Polyhedron\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CGAL_Project\Polyhedron\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/CGAL-4.7/demo/Polyhedron/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/CGAL-4.7/demo/Polyhedron -BE:/CGAL_Project/Polyhedron --check-stamp-file E:\CGAL_Project\Polyhedron\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/CGAL-4.7/demo/Polyhedron/CMakeLists.txt;E:\CGAL-4.7\demo\Polyhedron\CMakeLists.txt;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeCCompiler.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;E:\CGAL-4.7\build\CGALConfig.cmake;E:\CGAL-4.7\build\CGALExports.cmake;E:\CGAL-4.7\cmake\modules\UseCGAL.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Macros.cmake;E:\CGAL-4.7\cmake\modules\CGAL_VersionUtils.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Common.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Macros.cmake;E:\CGAL-4.7\cmake\modules\CGAL_SetupFlags.cmake;E:\CGAL-4.7\cmake\modules\CGAL_GeneratorSpecificSettings.cmake;E:\CGAL-4.7\cmake\modules\CGAL_TweakFindBoost.cmake;E:\CGAL-4.7\cmake\modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Script\Qt5ScriptConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Script\Qt5ScriptConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5ScriptTools\Qt5ScriptToolsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5ScriptTools\Qt5ScriptToolsConfig.cmake;E:\CGAL-4.7\cmake\modules\FindOpenGL.cmake;E:\CGAL-4.7\cmake\modules\FindQGLViewer.cmake;E:\CGAL-4.7\cmake\modules\FindEigen3.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\CGAL-4.7\cmake\modules\UseEigen3.cmake;E:\CGAL-4.7\cmake\modules\FindTBB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindBoost.cmake;E:\CGAL-4.7\demo\Polyhedron\polyhedron_demo_macros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\AddFileDependencies.cmake;E:\CGAL-4.7\demo\Polyhedron\Polyhedron_3.qrc;E:\CGAL-4.7\demo\Polyhedron\GlSplat\glsplat.qrc;E:\CGAL-4.7\demo\Polyhedron\CGAL_polyhedron_demoConfig.cmake.in;E:\CGAL-4.7\demo\Polyhedron\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CGAL_Project\Polyhedron\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/CGAL-4.7/demo/Polyhedron/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/CGAL-4.7/demo/Polyhedron -BE:/CGAL_Project/Polyhedron --check-stamp-file E:\CGAL_Project\Polyhedron\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/CGAL-4.7/demo/Polyhedron/CMakeLists.txt;E:\CGAL-4.7\demo\Polyhedron\CMakeLists.txt;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeCCompiler.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;E:\CGAL_Project\Polyhedron\CMakeFiles\3.3.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;E:\CGAL-4.7\build\CGALConfig.cmake;E:\CGAL-4.7\build\CGALExports.cmake;E:\CGAL-4.7\cmake\modules\UseCGAL.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Macros.cmake;E:\CGAL-4.7\cmake\modules\CGAL_VersionUtils.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Common.cmake;E:\CGAL-4.7\cmake\modules\CGAL_Macros.cmake;E:\CGAL-4.7\cmake\modules\CGAL_SetupFlags.cmake;E:\CGAL-4.7\cmake\modules\CGAL_GeneratorSpecificSettings.cmake;E:\CGAL-4.7\cmake\modules\CGAL_TweakFindBoost.cmake;E:\CGAL-4.7\cmake\modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Script\Qt5ScriptConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Script\Qt5ScriptConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5ScriptTools\Qt5ScriptToolsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\cmake\Qt5ScriptTools\Qt5ScriptToolsConfig.cmake;E:\CGAL-4.7\cmake\modules\FindOpenGL.cmake;E:\CGAL-4.7\cmake\modules\FindQGLViewer.cmake;E:\CGAL-4.7\cmake\modules\FindEigen3.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\CGAL-4.7\cmake\modules\UseEigen3.cmake;E:\CGAL-4.7\cmake\modules\FindTBB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindBoost.cmake;E:\CGAL-4.7\demo\Polyhedron\polyhedron_demo_macros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\AddFileDependencies.cmake;E:\CGAL-4.7\demo\Polyhedron\Polyhedron_3.qrc;E:\CGAL-4.7\demo\Polyhedron\GlSplat\glsplat.qrc;E:\CGAL-4.7\demo\Polyhedron\CGAL_polyhedron_demoConfig.cmake.in;E:\CGAL-4.7\demo\Polyhedron\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CGAL_Project\Polyhedron\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CGAL_Project\Polyhedron\CMakeFiles\0a8643aec19a5e951a364f1fd08f9221\Polyhedron_demo_pca_plugin.moc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Polyhedron_demo_pca_plugin.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\CGAL_Project\Polyhedron
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe @E:/CGAL_Project/Polyhedron/Polyhedron_demo_pca_plugin.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/CGAL_Project/Polyhedron/CMakeFiles/0a8643aec19a5e951a364f1fd08f9221/Polyhedron_demo_pca_plugin.moc.rule;E:\CGAL-4.7\demo\Polyhedron\Polyhedron_demo_pca_plugin.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CGAL_Project\Polyhedron\Polyhedron_demo_pca_plugin.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Polyhedron_demo_pca_plugin.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\CGAL_Project\Polyhedron
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe @E:/CGAL_Project/Polyhedron/Polyhedron_demo_pca_plugin.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/CGAL_Project/Polyhedron/CMakeFiles/0a8643aec19a5e951a364f1fd08f9221/Polyhedron_demo_pca_plugin.moc.rule;E:\CGAL-4.7\demo\Polyhedron\Polyhedron_demo_pca_plugin.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CGAL_Project\Polyhedron\Polyhedron_demo_pca_plugin.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating Polyhedron_demo_pca_plugin.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\CGAL_Project\Polyhedron
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe @E:/CGAL_Project/Polyhedron/Polyhedron_demo_pca_plugin.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/CGAL_Project/Polyhedron/CMakeFiles/0a8643aec19a5e951a364f1fd08f9221/Polyhedron_demo_pca_plugin.moc.rule;E:\CGAL-4.7\demo\Polyhedron\Polyhedron_demo_pca_plugin.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CGAL_Project\Polyhedron\Polyhedron_demo_pca_plugin.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating Polyhedron_demo_pca_plugin.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\CGAL_Project\Polyhedron
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe @E:/CGAL_Project/Polyhedron/Polyhedron_demo_pca_plugin.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/CGAL_Project/Polyhedron/CMakeFiles/0a8643aec19a5e951a364f1fd08f9221/Polyhedron_demo_pca_plugin.moc.rule;E:\CGAL-4.7\demo\Polyhedron\Polyhedron_demo_pca_plugin.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CGAL_Project\Polyhedron\Polyhedron_demo_pca_plugin.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\CGAL-4.7\demo\Polyhedron\Polyhedron_demo_pca_plugin.cpp"  />
+    <ClCompile Include="E:\CGAL_Project\Polyhedron\pca_plugin_automoc.cpp"  />
+    <None Include="E:\CGAL_Project\Polyhedron\Polyhedron_demo_pca_plugin.moc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/CGAL_Project/Polyhedron/Polyhedron_3.vcxproj">
+      <Project>93D2C8B0-1ADB-4B7B-8C7B-11AC9DBA6CBF</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/CGAL_Project/Polyhedron/ZERO_CHECK.vcxproj">
+      <Project>E1DCF4ED-996A-4458-9617-7C1866C5FC34</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/CGAL_Project/Polyhedron/demo_framework.vcxproj">
+      <Project>1BB2836E-E3A7-4416-8D48-140499E33141</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/CGAL_Project/Polyhedron/gl_splat.vcxproj">
+      <Project>D4AC9232-B01B-4B4C-8EF8-224EBA231F8E</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/CGAL_Project/Polyhedron/scene_basic_objects.vcxproj">
+      <Project>7C20FDFD-E03A-4158-BCBE-ADD7566174CB</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/CGAL_Project/Polyhedron/scene_polyhedron_item.vcxproj">
+      <Project>DD837FD1-3FE6-4CF3-B352-55867D342763</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

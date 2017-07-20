@@ -1,0 +1,7 @@
+set(CGAL_POLYHEDRON_DEMO_CMAKE_MODULE_PATH "E:/CGAL-4.7/demo/Polyhedron;E:/CGAL_Project/Polyhedron")
+set(CGAL_POLYHEDRON_DEMO_DEFINITIONS "-DUSE_FORWARD_DECL")
+set(CGAL_POLYHEDRON_DEMO_HEADERS_DIRS "E:/CGAL-4.7/demo/Polyhedron;E:/CGAL-4.7/demo/Polyhedron/include;E:/CGAL-4.7/demo/Polyhedron/CGAL_demo")
+set(CGAL_POLYHEDRON_DEMO_DIR "E:/CGAL_Project/Polyhedron")
+set(CGAL_POLYHEDRON_DEMO_PLUGINS_DIR "")
+set(CGAL_POLYHEDRON_DEMO_USE_FILE "E:/CGAL-4.7/demo/Polyhedron/UseCGAL_polyhedron_demo.cmake")
+set(CGAL_polyhedron_demoFOUND TRUE)

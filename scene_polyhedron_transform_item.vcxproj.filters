@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\CGAL-4.7\demo\Polyhedron\Scene_polyhedron_transform_item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\CGAL_Project\Polyhedron\scene_polyhedron_transform_item_automoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CGAL-4.7\demo\Polyhedron\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BBE9E928-71EF-401A-80C9-B717C73FA360}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

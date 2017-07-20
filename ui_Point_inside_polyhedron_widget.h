@@ -1,0 +1,138 @@
+/********************************************************************************
+** Form generated from reading UI file 'Point_inside_polyhedron_widget.ui'
+**
+** Created by: Qt User Interface Compiler version 5.5.1
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_POINT_INSIDE_POLYHEDRON_WIDGET_H
+#define UI_POINT_INSIDE_POLYHEDRON_WIDGET_H
+
+#include <QtCore/QVariant>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDockWidget>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_Point_inside_polyhedron
+{
+public:
+    QWidget *dockWidgetContents;
+    QVBoxLayout *verticalLayout;
+    QPushButton *Sample_random_points_from_bbox;
+    QGroupBox *groupBox;
+    QVBoxLayout *verticalLayout_2;
+    QHBoxLayout *horizontalLayout;
+    QCheckBox *Inside_check_box;
+    QCheckBox *On_boundary_check_box;
+    QCheckBox *Outside_check_box;
+    QPushButton *Select_button;
+    QLabel *label;
+    QHBoxLayout *horizontalLayout_2;
+    QLabel *label_2;
+
+    void setupUi(QDockWidget *Point_inside_polyhedron)
+    {
+        if (Point_inside_polyhedron->objectName().isEmpty())
+            Point_inside_polyhedron->setObjectName(QStringLiteral("Point_inside_polyhedron"));
+        Point_inside_polyhedron->resize(542, 258);
+        dockWidgetContents = new QWidget();
+        dockWidgetContents->setObjectName(QStringLiteral("dockWidgetContents"));
+        verticalLayout = new QVBoxLayout(dockWidgetContents);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        Sample_random_points_from_bbox = new QPushButton(dockWidgetContents);
+        Sample_random_points_from_bbox->setObjectName(QStringLiteral("Sample_random_points_from_bbox"));
+
+        verticalLayout->addWidget(Sample_random_points_from_bbox);
+
+        groupBox = new QGroupBox(dockWidgetContents);
+        groupBox->setObjectName(QStringLiteral("groupBox"));
+        verticalLayout_2 = new QVBoxLayout(groupBox);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        Inside_check_box = new QCheckBox(groupBox);
+        Inside_check_box->setObjectName(QStringLiteral("Inside_check_box"));
+
+        horizontalLayout->addWidget(Inside_check_box);
+
+        On_boundary_check_box = new QCheckBox(groupBox);
+        On_boundary_check_box->setObjectName(QStringLiteral("On_boundary_check_box"));
+
+        horizontalLayout->addWidget(On_boundary_check_box);
+
+        Outside_check_box = new QCheckBox(groupBox);
+        Outside_check_box->setObjectName(QStringLiteral("Outside_check_box"));
+
+        horizontalLayout->addWidget(Outside_check_box);
+
+
+        verticalLayout_2->addLayout(horizontalLayout);
+
+        Select_button = new QPushButton(groupBox);
+        Select_button->setObjectName(QStringLiteral("Select_button"));
+
+        verticalLayout_2->addWidget(Select_button);
+
+        label = new QLabel(groupBox);
+        label->setObjectName(QStringLiteral("label"));
+        QFont font;
+        font.setBold(true);
+        font.setWeight(75);
+        label->setFont(font);
+
+        verticalLayout_2->addWidget(label);
+
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        label_2 = new QLabel(groupBox);
+        label_2->setObjectName(QStringLiteral("label_2"));
+
+        horizontalLayout_2->addWidget(label_2);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_2);
+
+
+        verticalLayout->addWidget(groupBox);
+
+        Point_inside_polyhedron->setWidget(dockWidgetContents);
+
+        retranslateUi(Point_inside_polyhedron);
+
+        QMetaObject::connectSlotsByName(Point_inside_polyhedron);
+    } // setupUi
+
+    void retranslateUi(QDockWidget *Point_inside_polyhedron)
+    {
+        Point_inside_polyhedron->setWindowTitle(QApplication::translate("Point_inside_polyhedron", "Point Inside Polyhedron", 0));
+        Sample_random_points_from_bbox->setText(QApplication::translate("Point_inside_polyhedron", "Sample Random Points from Bbox", 0));
+        groupBox->setTitle(QApplication::translate("Point_inside_polyhedron", "Point Location", 0));
+        Inside_check_box->setText(QApplication::translate("Point_inside_polyhedron", "Inside", 0));
+        On_boundary_check_box->setText(QApplication::translate("Point_inside_polyhedron", "On Boundary", 0));
+        Outside_check_box->setText(QApplication::translate("Point_inside_polyhedron", "Outside", 0));
+        Select_button->setText(QApplication::translate("Point_inside_polyhedron", "Select", 0));
+        label->setText(QApplication::translate("Point_inside_polyhedron", "Note:", 0));
+        label_2->setText(QApplication::translate("Point_inside_polyhedron", "<html><head/><body><p>A selection is possible only if a point set item<br/>and a (closed) polyhedron item are selected</p></body></html>", 0));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class Point_inside_polyhedron: public Ui_Point_inside_polyhedron {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_POINT_INSIDE_POLYHEDRON_WIDGET_H
